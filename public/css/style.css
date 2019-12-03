@@ -1,0 +1,382 @@
+html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100vh;
+      background: #000;
+      /*background: url(vb.jpg) no-repeat 50% 50%;*/
+      background-size: cover;
+      font-family: 'butler stencil';
+      /*overflow: hidden;*/
+}
+
+.outer-content{
+      width: 100%;
+      height:100vh;
+      flex-direction:column;
+      justify-content: center;
+
+}
+
+.title {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+}
+
+h1 {
+      text-transform: uppercase;
+      font-size: 20px;
+      letter-spacing: 9px;
+      font-weight: 400;
+      color: #000;
+}
+
+
+.menu-strip {
+      background: #000;
+      position: fixed;
+      width: 5%;
+      height: 100vh;
+      border-right: 1px solid rgba(89,89,89,0.1);
+      z-index: 1;
+}
+
+.toggle-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+}
+
+.toggle-btn ion-icon {
+      font-size: 25px;
+      color: #b4a69d;
+}
+
+.nav .menu {
+      position: absolute;
+      width: 0%;
+      height: 100vh;
+      left: 5%;
+      background: #000;
+      z-index: 1;
+}
+
+
+
+.images {
+      position: fixed;
+      width: 0%;
+      height: 100vh;
+      left: 49%;
+      background: url(img/7.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      z-index: 1;
+}
+
+.bg {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background: red;
+}
+
+.nav .menu ul {
+      list-style: none;
+      position: fixed;
+      top: 36%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+}
+
+.nav .menu a{
+      text-decoration: none;
+}
+
+.nav .menu ul li {
+      color: #fff;
+      font-weight: 380;
+      font-size: 30px;
+      line-height: 60px;
+      letter-spacing: 0px;
+}
+
+#order {
+      font-size: 16px;
+      font-weight: lighter;
+      color: #afafaf;
+}
+
+#tag {
+      font-size: 18px;
+      font-weight: lighter;
+      color: #afafaf;
+      transition: 0.3s;
+}
+
+.media {
+      position: fixed;
+      top: 80%;
+      left: 22.5%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+}
+
+
+.media ul li{
+      display: inline-block !important;
+      color: #afafaf;
+      margin-left: 10px;
+      font-size: 25px;
+}
+
+.media ul li a{
+      color:#c10b0b;
+}
+
+.nav .menu ul li:hover #tag {
+      color: #a66f2c;
+      transition: .5s;
+}
+
+#menu {
+  background: linear-gradient(#5B5B5B,#5B5B5B) left no-repeat, #afafaf;
+  background-size:0% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .5s;
+}
+
+#menu:hover {
+  background-size:100% 100%;
+}
+
+.bg1 {
+      display: block;
+      background: url(img/11.jpg) no-repeat 50% 50%;
+      background-size: contain;
+      background-position: center;
+}
+
+
+.bg2 {
+      display: block;
+      background: url(img/2.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      background-position: top;
+}
+
+
+.bg3 {
+      display: block;
+      background: url(img/10.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      background-position: top;
+}
+
+
+.bg4 {
+      display: block;
+      background: url(img/6.jpg) no-repeat 50% 50%;
+      background-size: cover;
+      background-position: top;
+}
+
+
+.hide {
+      display: none;
+}
+
+.full-page {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    position: fixed;
+    left: 15vh;
+    top: 10vh;
+}
+.navbar {
+    position: fixed;
+    right: 15vh;
+    top: 10vh;
+}
+
+.social-media {
+    position: fixed;
+    left: 15vh;
+    bottom: 10vh;
+}
+
+.copyright {
+    position: fixed;
+    right: 15vh;
+    bottom: 10vh;
+}
+
+.copyright p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.copyright p span {
+    color: #ef0303;
+}
+
+.navbar ul, .social-media ul {
+    margin: 0;
+}
+
+.navbar ul li , .social-media ul li  {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a, .social-media ul li a {
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
+
+.navbar ul li a:hover, .social-media ul li a:hover {
+    color: #ef0303
+}
+
+.navbar a.active {
+    color: #ef0303
+}
+
+.main-title h2 {
+    position: fixed;
+    transform: translateX(-50%);
+    left: 50%;
+    top: 20vh;
+    text-align: center;
+    color: #444;
+    font-size: 120px;
+    font-style: italic;
+    opacity: .2;
+}
+
+.main-title h2::after {
+    content: 'Selectedwork';
+     color: transparent;
+    -webkit-text-stroke: .2px #444444;
+    left: 0;
+    top: 20px;
+    position: absolute;
+}
+
+.swiper-container {
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-slide {
+    width: 50%;
+
+}
+
+.swiper-wrapper {
+    transition-delay: .5s;
+}
+
+
+.port-img img {
+   width: 100%;
+   overflow: hidden;
+}
+.port-img::after {
+    content: '';
+    width: 100%;
+    height: calc(100% - 4px);
+    background-image: -moz-linear-gradient( 0deg, rgb(195,20,50) 0%, rgb(204,18,26) 100%);
+    background-image: -webkit-linear-gradient( 0deg, rgb(195,20,50) 0%, rgb(204,18,26) 100%);
+    background-image: -ms-linear-gradient( 0deg, rgb(195,20,50) 0%, rgb(204,18,26) 100%);
+    mix-blend-mode: multiply;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transition: all 1s ease-in-out;
+}
+
+.port-img:hover::after {
+    opacity: .5;
+}
+.port-text {
+    position: absolute;
+    top: 50%;
+    margin-left: -80px;
+    transform: translateY(-50%);
+    z-index: 2;
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+}
+
+.port-text h4 {
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+}
+
+.port-text h4 span {
+    position: absolute;
+    height: 50px;
+}
+
+
+
+@media(max-width: 768px) {
+      .images {
+            display: none;
+      }
+
+      .nav .menu {
+            width: 0%;
+            left: 10%;
+      }
+
+      .menu ul {
+            margin-top: 20px;
+            margin-left: -5px;
+
+      }
+
+      .menu-strip {
+            width: 10%;
+      }
+
+      .toggle-btn {
+            position: absolute;
+            transform: translate(-50%, -90%);
+      }
+
+      .menu li #menu {
+            font-size: 18px;
+      }
+
+      #tag{
+            display: none;
+      }
+
+      #order {
+            display: none;
+      }
+
+      .media {
+            display: ;
+      }
+}
